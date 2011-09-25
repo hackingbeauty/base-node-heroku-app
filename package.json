@@ -1,0 +1,9 @@
+{
+  "name":"node-example",
+  "version":"0.0.1",
+  "dependencies":{
+    "express":"2.2.0",
+    "redis-url":"0.0.1",
+    "jade":"0.11.1"
+  }
+}
