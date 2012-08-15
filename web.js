@@ -2,12 +2,12 @@ var express = require('express'),
     jade = require('jade'),
     path = require('path');
 
-var app = express.createServer(express.logger());
+var app = express(express.logger());
 app.configure(function(){
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'jade');
   app.set('view options');
-  var oneYear = 31557600000;
+  app.locals.pretty = true;  
   app.use("/", express.static(__dirname + '/public'));
   app.use(express.bodyParser());
 });
@@ -18,7 +18,7 @@ app.get('/', function(request,response){
   });
 });
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8888;
 app.listen(port, function(){
   console.log("listening on " + port);
 });
