@@ -4,7 +4,11 @@
   "dependencies": {
     "express": "~3.0.0rc3",
     "jade": "~0.27.2",
-    "mongoose": "~3.0.1"
+    "mongoose": "~3.0.1",
+    "connect-redis": "~1.4.1",
+    "stylus": "~0.28.2",
+    "redis": "~0.7.2",
+    "socket.io": "~0.9.10"
   },
   "description": "ERROR: No README.md file found!",
   "main": "web.js",
